@@ -8,5 +8,5 @@ if($dia == $hoy)
 elseif(strtotime($hoy) - strtotime($dia) == 86400)
 	return 'Ayer, '.date('H:i',$tiempo);
 else
-	return date('H:i d-m-Y', $tiempo);
+	return date('d-m-Y H:i', $tiempo);
 }
